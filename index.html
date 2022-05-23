@@ -4,8 +4,8 @@
 <button onclick="printNumbers('hour','minute')"></button>
 <script>
 
-function printNumbers2(from, to) {
-  let current = from;
+function printNumbers2() {
+  
 
   let timerId = setInterval(function() {
     
@@ -26,7 +26,10 @@ printNumbers(5, 10);
         var minutes = new Date().getMinutes();
         if(hours==hour){
             if(minutes==minute)
-            alert('hello')
+              alert('олимпиада is started')
+              printNumbers2()
+              break
+            
         }
       }, 5000);
     }
