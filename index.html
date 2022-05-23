@@ -1,0 +1,36 @@
+
+<input id="hour">
+<input id="minute">
+<button onclick="printNumbers('hour','minute')"></button>
+<script>
+
+function printNumbers2(from, to) {
+  let current = from;
+
+  let timerId = setInterval(function() {
+    
+
+    current++;
+  }, 10800000);
+  alert('закончено')
+}
+
+// использование:
+printNumbers(5, 10);
+    function printNumbers(p1,p2) {
+      hour=document.getElementById(p1).value
+      minute=document.getElementById(p2).value
+    
+      let timerId = setInterval(function() {
+        var hours = new Date().getHours();
+        var minutes = new Date().getMinutes();
+        if(hours==hour){
+            if(minutes==minute)
+            alert('hello')
+        }
+      }, 5000);
+    }
+    
+    // использование:
+    
+    </script>
